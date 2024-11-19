@@ -1,10 +1,56 @@
-  < IDOCTYPE html>
-    shtml lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-smeta charset="UTF-8">
-‹meta name="viewport" content="width=device-width, initial-scale 1.0"> ‹title>My First Website</title>
- <link rel="stylesheet" href="styn.css">  <!-- Liên kết CSS -->
-</head> ‹body>
-<h1> Chào mừng bạn đến với trang web của tôil </h1>
-<p>Đây là trang web đầu tiên của tôi trên GitHub Pages. </p>
-</body> </html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đọc Truyện</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Đọc Truyện</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#truyen">Truyện Mới</a></li>
+            <li><a href="#theloai">Thể Loại</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+        </ul>
+    </nav>
+
+    <section id="truyen">
+        <h2>Các Truyện Nổi Bật</h2>
+        <div class="truyen-list">
+            <div class="truyen-item" onclick="loadStory('truyen1')">
+                <h3>Truyện 1</h3>
+                <p>Miêu tả ngắn về truyện 1...</p>
+            </div>
+            <div class="truyen-item" onclick="loadStory('truyen2')">
+                <h3>Truyện 2</h3>
+                <p>Miêu tả ngắn về truyện 2...</p>
+            </div>
+            <div class="truyen-item" onclick="loadStory('truyen3')">
+                <h3>Truyện 3</h3>
+                <p>Miêu tả ngắn về truyện 3...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story-content">
+        <h2>Chi Tiết Câu Chuyện</h2>
+        <div id="story-text">
+            <p>Vui lòng chọn một câu chuyện để đọc...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Đọc Truyện. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
